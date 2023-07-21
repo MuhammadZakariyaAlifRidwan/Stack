@@ -1,13 +1,13 @@
     #include <iostream>
     using namespace std;
 
-    int maksimal = 10;
+    int max = 10;
     string dataBarang[10];
     int top = 0;
 
     //Fungsi untuk mengecek data penuh atau tidak
     bool isFullBarang(){
-        if( top == maksimal ){
+        if( top == max ){
             return true;
         }else{
             return false;
@@ -99,7 +99,7 @@ void changeDataBarang(string data, int posisi) {
         cout << "Data kosong!!" << endl;
     } else {
         cout << ".:Data stack pada array:." << endl;
-        for (int i = maksimal - 1; i >= 0; i--) {
+        for (int i = max - 1; i >= 0; i--) {
             if (dataBarang[i] != "") {
                 cout << "Data Ke "<< i + 1 << ": " << dataBarang[i] << endl;
             }
